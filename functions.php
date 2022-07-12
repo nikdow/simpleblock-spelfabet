@@ -11,4 +11,4 @@ function spelfabet_enqueue_styles() {
     );
 }
 
-add_action( 'wp_enqueue_scripts', 'sam_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'spelfabet_enqueue_styles' );
