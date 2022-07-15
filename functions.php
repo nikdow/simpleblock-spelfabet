@@ -9,6 +9,7 @@ function spelfabet_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version') 
     );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'spelfabet_enqueue_styles' );
