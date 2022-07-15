@@ -1967,3 +1967,9 @@ button.breadcrumb_gotocart{
 .entry-content > div:first-child {
 	max-width: 63%;
 }
+
+/* FOR POST */
+.post img{	
+    margin: 10px 0;
+    width: 100%;
+}
