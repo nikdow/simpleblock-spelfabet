@@ -1971,3 +1971,7 @@ button.breadcrumb_gotocart{
     width: 100%;
 }
 
+/* widgets */
+div.wp-block-search {
+	margin-top: 2em;
+}
