@@ -10,6 +10,8 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         top bottom menu
  Text Domain:  simpleblock-spelfabet
+
+ test
 */
 
 
@@ -21,8 +23,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 body {
-	line-height: 1;
-	background-color: red !important;
+	 /* line-height: 1; */
 }
 ol,
 ul {
@@ -1831,7 +1832,7 @@ button.breadcrumb_gotocart{
 	}
 
 	h1.site-title,
-	h2.site-description{
+	h3.site-description{
 		text-indent: 0;
     background: transparent;
 		height: auto;
@@ -1840,10 +1841,15 @@ button.breadcrumb_gotocart{
 	
 	h1.site-title{
 		font-size: 24px;
+		margin-top: 0;
+		padding-top: 0;
 	}
 
-	h2.site-description{
+	h3.site-description{
 		font-weight: 400;
+		margin-bottom: 0px;
+		font-family: "Open Sans",sans-serif;
+		font-size: 13px;
 	}
 
 	h1.site-title a {
@@ -1894,7 +1900,7 @@ button.breadcrumb_gotocart{
 
 	div#content{
 		margin-top: 0px;
-    margin-bottom: 0px;
+    	margin-bottom: 0px;
 	}
 
 	div#primary {
@@ -1920,3 +1926,44 @@ button.breadcrumb_gotocart{
  }
  * 
  * */
+ 
+ /* HEADER */
+
+ header {
+	display: flex;
+	flex-flow: row wrap;
+ }
+
+ header > div:first-child {
+	flex: 0 0 calc(100% - 155px);
+ }
+	
+ #mega-menu-wrap-header-menu {
+	margin: 24px 0;
+ }
+
+ header > div:last-child {
+	flex: 0 0 155px;
+ }
+
+ header > div:last-child img{
+	width: 100%;
+	box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+ }
+
+
+ /* CONTENT */
+ .gc-page {
+    background-color: #fff;
+    max-width: 65rem;
+    margin: 50px auto;
+    padding: 30px 40px;
+ }
+
+ h1.site-title a {
+    text-decoration: none;
+}
+
+.entry-content > div:first-child {
+	max-width: 63%;
+}
