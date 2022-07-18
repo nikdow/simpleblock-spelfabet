@@ -1500,7 +1500,7 @@ img#wpstats {
 	}
 	.widget-area {
 		float: right;
-		width: 26.041666667%;
+		width: 80%;
 	}
 	.site-header h1,
 	.site-header h2 {
@@ -1969,12 +1969,34 @@ section.entry-content {
     flex-flow: row wrap;
 }
 
-.entry-content > div:first-child {
+.gc-content{	
+    border-bottom: 4px double #ededed;
+    margin-bottom: 50px;
 	max-width: 63%;
+    flex: 0 0 63%;
 }
 
-.entry-content > div:last-child {
-	max-width: calc(100% - 63%);
+.gc-sidebar {
+    max-width: 37%;
+    flex: 0 0 37%;
+}
+
+.gc-sidebar-image img{
+    max-width: 150px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#primary-sidebar h2 {
+    margin-bottom: 24px;
+    margin-bottom: 1.714285714rem;
+	text-transform: uppercase;
+    font: 700 11px/1em Open Sans;
+}
+
+.wp-block-latest-posts.wp-block-latest-posts__list li {
+    margin: 0;
 }
 
 /* FOR POST */
