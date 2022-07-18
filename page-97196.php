@@ -36,7 +36,7 @@
         </div>
     </div>
     <div>
-        
+        <?php include_once "sidebar.php"?>
     </div>
 </section> 
 <?php get_footer(); ?>
