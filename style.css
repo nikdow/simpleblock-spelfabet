@@ -1999,6 +1999,12 @@ section.entry-content {
     margin: 0;
 }
 
+#mega-menu-wrap-header-menu #mega-menu-header-menu {
+    border: 1px solid #ddd;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
 /* FOR POST */
 .post img{	
     margin: 10px 0;

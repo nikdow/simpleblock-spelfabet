@@ -4,7 +4,7 @@
 
 <?php get_header(); ?>
 <section class="entry-content">
-    <div>
+    <div class="gc-content">
         <?php 
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1 ;
             $posts = new WP_Query( array(
@@ -35,7 +35,7 @@
             <?php previous_posts_link('Newer Posts', $posts->max_num_pages); ?>
         </div>
     </div>
-    <div>
+    <div  class="gc-sidebar">
         <?php include_once "sidebar.php"?>
     </div>
 </section> 
