@@ -2020,6 +2020,38 @@ div.wp-block-search {
 	display: none;
 }
 
+#mega-menu-wrap-header-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner, 
+#mega-menu-wrap-header-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before, 
+#mega-menu-wrap-header-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after {
+	background-color: #333;
+}
+
+div#primary-sidebar {
+    padding-left: 30px;
+}
+
+/* CONTACT FORM */
+
+.contact-form label {
+    display: block;
+    float: none;
+    font-weight: 700;
+    margin-bottom: 0.25em;
+}
+
+.grunion-field-wrap input, .grunion-field-wrap textarea {
+    width: 100%;
+    padding: 14px 7px;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+}
+
+.contact-form label span {
+    font-size: 85%;
+    font-weight: 400;
+    margin-left: 0.25em;
+}
+
 @media all and (max-width: 1024px){
 	
 	header > .gc-main-header{
@@ -2053,6 +2085,13 @@ div.wp-block-search {
 		max-width: 100px;
 	}
 
+	.widget-area {
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+		min-width: 300px;
+		margin-top: 30px;
+	}
 }
 
 @media all and (max-width: 768px){
@@ -2069,4 +2108,26 @@ div.wp-block-search {
 	section.entry-content {
 		margin-bottom: 50px;
 	}
+}
+
+@media all and (max-width: 420px){
+	.gc-main-header > div:first-child,
+	.gc-mobile-header {
+		flex: 0 0 100%;
+	}
+
+	.gc-mobile-header{
+		order: 1;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+	}
+
+	.gc-main-header > div:first-child{
+		order: 2;
+	}
+
+	.gc-main-header > #mega-menu-wrap-header-menu {
+		order: 3;
+	}
+
 }
