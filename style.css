@@ -1929,7 +1929,7 @@ button.breadcrumb_gotocart{
  
  /* HEADER */
 
- header {
+ .gc-page > header {
 	display: flex;
 	flex-flow: row wrap;
  }
@@ -2006,6 +2006,11 @@ section.entry-content {
 }
 
 /* FOR POST */
+.post {
+    border-bottom: 4px double #ededed;
+    margin-bottom: 50px;
+}
+
 .post img{	
     margin: 10px 0;
     width: 100%;
@@ -2050,6 +2055,47 @@ div#primary-sidebar {
     font-size: 85%;
     font-weight: 400;
     margin-left: 0.25em;
+}
+
+#comments {	
+    border-top: 4px double #ededed;
+	margin-top: 50px;
+}
+
+a + #comments {
+    border-top: 0;
+	margin-top: 0px;
+}
+
+#comments > ol > li.comment {
+    margin-left: 0;
+}
+
+#comments article.comment {
+    border-bottom: 4px double #ededed;
+    padding: 25px 0;
+    margin-bottom: 0;
+}
+
+.comments-area article header{
+	margin-bottom: 30px;
+}
+
+#comments .comment::marker {
+	display: none;
+    color: transparent;
+}
+
+.comment p a {
+    /* width: fit-content; */
+    position: relative;
+    display: block;
+    width: 100%;
+    word-break: break-word;
+}
+
+ol.children .comment {
+    margin: 0px 0 0;
 }
 
 @media all and (max-width: 1024px){

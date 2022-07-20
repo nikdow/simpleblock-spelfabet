@@ -10,14 +10,9 @@
 
         <?php previous_post_link();  ?>
 
-        <ul id="comments" class="commentlist">
-            <?php comment_form(); ?>
-            <?php 
-                //comments_template();
-                //wp_list_comments( array('callback' => 'better_comments') );
-               // foreach ( $comments as $comment ) {  }
-            ?>
-        </ul>
+        <?php if ( get_comments_number() > 0 ): ?>
+            <?php comments_template(); ?>
+        <?php endif; ?>
     </div>
     <div class="gc-sidebar">
       <?php include_once "sidebar.php"?>

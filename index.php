@@ -25,11 +25,9 @@
           }
       ?>
 
-      <?php 
-          
-         // comments_template();
-         // wp_list_comments( array('callback' => 'better_comments') );
-      ?>
+        <?php if ( get_comments_number() > 0 ): ?>  
+            <?php comments_template(); ?>
+        <?php endif; ?>
 
     </div>
     <div class="gc-sidebar">
