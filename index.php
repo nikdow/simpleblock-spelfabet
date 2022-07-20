@@ -24,6 +24,13 @@
             the_content(); 
           }
       ?>
+
+      <?php 
+          
+         // comments_template();
+         // wp_list_comments( array('callback' => 'better_comments') );
+      ?>
+
     </div>
     <div class="gc-sidebar">
       <?php include_once "sidebar.php"?>

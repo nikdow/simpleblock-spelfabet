@@ -2110,7 +2110,7 @@ div#primary-sidebar {
 	}
 }
 
-@media all and (max-width: 420px){
+@media all and (max-width: 420px){ 
 	.gc-main-header > div:first-child,
 	.gc-mobile-header {
 		flex: 0 0 100%;
@@ -2129,5 +2129,4 @@ div#primary-sidebar {
 	.gc-main-header > #mega-menu-wrap-header-menu {
 		order: 3;
 	}
-
 }
