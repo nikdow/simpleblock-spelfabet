@@ -2066,9 +2066,6 @@ button.breadcrumb_gotocart{
  }
  * 
  * */
-<<<<<<< HEAD
-
-=======
  
  /* HEADER */
 
@@ -2089,11 +2086,11 @@ button.breadcrumb_gotocart{
 	flex: 0 0 155px;
  }
 
- header > div:last-child img{
+ header > div:last-child img,
+ .gc-mobile-header img{
 	width: 100%;
 	box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
  }
-
 
  /* CONTENT */
  .gc-page {
@@ -2366,4 +2363,3 @@ button.breadcrumb_gotocart{
 	margin-bottom: 1em;
 	margin-top: 0.5em;
 }
->>>>>>> 65e8771f784d188811babbb1b5ee78485b3b6310
