@@ -10,12 +10,17 @@
 <body>
     <section class="gc-page">
     <header>
-        <div>
-            <h1 class="site-title"><a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-            <h3 class="site-description"><?php echo get_bloginfo( 'description' ); ?></h3>
+        <div class="gc-main-header">
+            <div>
+                <h1 class="site-title"><a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+                <h3 class="site-description"><?php echo get_bloginfo( 'description' ); ?></h3>
+            </div>
+            <div class="gc-mobile-header">
+                <img src="<?php echo wp_get_attachment_image_url( 6423 ); ?>"/>
+            </div>
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </div>
-        <div>
+        <div class="gc-tablet-header">
             <img src="<?php echo wp_get_attachment_image_url( 6423 ); ?>"/>
         </div>
     </header>

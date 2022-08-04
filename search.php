@@ -1,19 +1,21 @@
-<?php 
-/* Template Name: Blogs */
-?>
-
 <?php get_header(); ?>
 <section class="entry-content">
-    <div>
+    <div class="gc-content">
         <?php 
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1 ;
-            $posts = new WP_Query( array(
+            $args = array(
                 'post_type'   => "post",
                 'posts_per_page' => 10,
                 'orderby' => "date",
                 'order' => "DESC",
                 'paged' => $paged
-            ) );
+            );
+
+            if (isset($_GET['s'])) {
+                $args['s'] = $_GET['s'];
+            }
+
+            $posts = new WP_Query( $args );
             
             if ( $posts->have_posts() ) {
                 while ( $posts->have_posts() ){
@@ -35,8 +37,8 @@
             <?php previous_posts_link('Newer Posts', $posts->max_num_pages); ?>
         </div>
     </div>
-    <div>
-        
+    <div  class="gc-sidebar">
+        <?php include_once "sidebar.php"?>
     </div>
 </section> 
 <?php get_footer(); ?>
