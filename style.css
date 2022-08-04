@@ -2265,6 +2265,10 @@ div#primary-sidebar {
     padding: 5px 0;
 }
 
+#mega-menu-header-menu li a{
+	font-family: "Open Sans", sans-serif !important;
+}
+
 @media all and (max-width: 1024px){
 
 	ul#menu-custom {
