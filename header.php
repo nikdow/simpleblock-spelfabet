@@ -24,7 +24,7 @@
             <img src="<?php echo wp_get_attachment_image_url( 6423 ); ?>"/>
         </div>
     </header>
-      // we use the breadcrumbs to display a red "Go to checkout" button via the customisations plugin
+      <!--we use the breadcrumbs to display a red "Go to checkout" button via the customisations plugin-->
       <br/>
     <?php if (class_exists('WooCommerce') && is_woocommerce()) : ?>
     <?php woocommerce_breadcrumb(); ?>
