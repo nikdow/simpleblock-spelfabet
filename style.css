@@ -2363,3 +2363,14 @@ button.breadcrumb_gotocart{
 	margin-bottom: 1em;
 	margin-top: 0.5em;
 }
+/* indicate external link */
+.extlink {
+	font-variation-settings:
+			'FILL' 0,
+			'wght' 400,
+			'GRAD' 0,
+			'opsz' 48
+}
+.extlink sup:after {
+	content:'open_in_new';
+}
