@@ -119,3 +119,7 @@ if ( ! function_exists( 'twentytwelve_comment' ) ) :
 		endswitch; // End comment_type check.
 	}
 endif;
+add_filter( 'woocommerce_order_button_html', 'replace_order_button_html', 10, 2 );
+function replace_order_button_html( $order_button ) {
+  return '';
+}
