@@ -5,7 +5,7 @@
  Author:       Nik Dow
  Author URI:   http://www.cbdweb.net/
  Template:     simpleblock
- Version:      1.0.1
+ Version:      1.0.2
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         top bottom menu
@@ -14,128 +14,6 @@
  test
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-body {
-	line-height: 1;
-}
-ol,
-ul {
-	list-style: none;
-}
-blockquote,
-q {
-	quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-caption,
-th,
-td {
-	font-weight: normal;
-	text-align: left;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
-}
-html {
-	overflow-y: scroll;
-	font-size: 100%;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-}
-a:focus {
-	outline: thin dotted;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-	display: block;
-}
-audio,
-canvas,
-video {
-	display: inline-block;
-}
-audio:not([controls]) {
-	display: none;
-}
-del {
-	color: #333;
-}
-ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin: 24px;
-	margin-bottom: 1.714285714rem;
-}
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-sup {
-	top: -0.5em;
-}
-sub {
-	bottom: -0.25em;
-}
-small {
-	font-size: smaller;
-}
-img {
-	border: 0;
-	-ms-interpolation-mode: bicubic;
-}
-
-/* Clearing floats */
-.clear:after,
-.wrapper:after,
-.format-status .entry-header:after {
-	clear: both;
-}
-.clear:before,
-.clear:after,
-.wrapper:before,
-.wrapper:after,
-.format-status .entry-header:before,
-.format-status .entry-header:after {
-	display: table;
-	content: "";
-}
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -244,8 +122,6 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
-<<<<<<< HEAD
-=======
 /* Clearing floats */
 .clear:after,
 .wrapper:after,
@@ -263,7 +139,6 @@ img {
 }
 
 
->>>>>>> 65e8771f784d188811babbb1b5ee78485b3b6310
 /* =Repeatable patterns
 -------------------------------------------------------------- */
 
@@ -1625,11 +1500,7 @@ img#wpstats {
 	}
 	.widget-area {
 		float: right;
-<<<<<<< HEAD
-		width: 26.041666667%;
-=======
 		width: 80%;
->>>>>>> 65e8771f784d188811babbb1b5ee78485b3b6310
 	}
 	.site-header h1,
 	.site-header h2 {
@@ -1961,11 +1832,7 @@ button.breadcrumb_gotocart{
 	}
 
 	h1.site-title,
-<<<<<<< HEAD
-	h2.site-description{
-=======
 	h3.site-description{
->>>>>>> 65e8771f784d188811babbb1b5ee78485b3b6310
 		text-indent: 0;
     background: transparent;
 		height: auto;
@@ -1974,12 +1841,6 @@ button.breadcrumb_gotocart{
 	
 	h1.site-title{
 		font-size: 24px;
-<<<<<<< HEAD
-	}
-
-	h2.site-description{
-		font-weight: 400;
-=======
 		margin-top: 0;
 		padding-top: 0;
 	}
@@ -1989,7 +1850,6 @@ button.breadcrumb_gotocart{
 		margin-bottom: 0px;
 		font-family: "Open Sans",sans-serif;
 		font-size: 13px;
->>>>>>> 65e8771f784d188811babbb1b5ee78485b3b6310
 	}
 
 	h1.site-title a {
@@ -2086,11 +1946,11 @@ button.breadcrumb_gotocart{
 	flex: 0 0 155px;
  }
 
- header > div:last-child img,
- .gc-mobile-header img{
+ header > div:last-child img{
 	width: 100%;
 	box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
  }
+
 
  /* CONTENT */
  .gc-page {
@@ -2252,18 +2112,6 @@ ul#menu-custom {
 
 div#primary-sidebar {
 	padding-left: 0;
-}
-
-#mega-menu-wrap-header-menu .mega-menu-toggle {
-    border-style: solid;
-    border-color: rgba(34, 34, 34, .5);
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    padding: 5px 0;
-}
-
-#mega-menu-header-menu li a{
-	font-family: "Open Sans", sans-serif !important;
 }
 
 @media all and (max-width: 1024px){
