@@ -941,7 +941,7 @@ img.aligncenter,
 }
 .entry-content td,
 .comment-content td {
-	border-top: 1px solid #ededed;
+/*	border-top: 1px solid #ededed;*/ /* this would prevent a dark border on tables, see https://www.spelfabet.com.au/spelling-lists/sorted-by-sound/ar/a-as-in-last/ */
 	padding: 6px 10px 6px 0;
 }
 .site-content article {
